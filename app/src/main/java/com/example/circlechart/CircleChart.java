@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class CircleChart extends RelativeLayout {
 
+    private Circle circle;
     private TextView txtTitle, txtContent;
 
     public CircleChart(Context context) {
@@ -25,6 +26,7 @@ public class CircleChart extends RelativeLayout {
 
     private void init() {
         inflate(getContext(), R.layout.circle_chart, this);
+        circle = findViewById(R.id.circle);
         txtTitle = findViewById(R.id.textView);
         txtContent = findViewById(R.id.textView2);
     }
@@ -35,6 +37,10 @@ public class CircleChart extends RelativeLayout {
 
     public void setContent(String content) {
         txtContent.setText(content);
+    }
+
+    public void setData(int[] per, int[] color) {
+        circle.setData(per, color);
     }
 
 }

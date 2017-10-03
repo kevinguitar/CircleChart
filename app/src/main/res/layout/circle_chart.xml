@@ -4,14 +4,14 @@
     android:layout_height="wrap_content">
 
     <com.example.circlechart.Circle
-        android:id="@+id/circle_chart"
+        android:id="@+id/circle"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <View
         android:id="@+id/center_point"
-        android:layout_width="10dp"
-        android:layout_height="10dp"
+        android:layout_width="@dimen/center_point_size"
+        android:layout_height="@dimen/center_point_size"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
@@ -21,8 +21,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@id/center_point"
         android:layout_centerHorizontal="true"
-        android:text="NTD"
-        android:textSize="16pt" />
+        android:text="@string/default_title"
+        android:textSize="@dimen/text_title_size" />
 
     <TextView
         android:id="@+id/textView2"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/center_point"
         android:layout_centerHorizontal="true"
-        android:text="price"
-        android:textSize="14pt" />
+        android:text="@string/default_content"
+        android:textSize="@dimen/text_content_size" />
 
 </merge>

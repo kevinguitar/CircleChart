@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="center_point_size">12dp</dimen>
+    <dimen name="text_title_size">16pt</dimen>
+    <dimen name="text_content_size">14pt</dimen>
+</resources>

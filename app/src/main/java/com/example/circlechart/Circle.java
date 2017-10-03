@@ -18,13 +18,10 @@ public class Circle extends View {
 
     private int mPadding;
     private int mStrokeArcWidth;
-    private int mCenter;
     private int mCircleWidth;
     private int[] mPercentage;
     private int[] mColor;
-    private int mColorText;
     private float mCurrentAngle;
-    private String mPrice = "930,000";
     private RectF mOval;
     private Paint mPaint;
 
@@ -45,21 +42,18 @@ public class Circle extends View {
         mStrokeArcWidth = 26;
         mPercentage = new int[]{55, 35, 10};
         mColor = new int[]{0xFFFFAE29, 0xFF7DE85E, 0xFFFEF901};
-        mColorText = 0xFF4F4F4F;
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
         mCircleWidth = w - 2 * mPadding;
-        mCenter = w / 2;
         modifyOval();
     }
 
-    public void setData(String price, int[] per, int[] color) {
+    public void setData(int[] per, int[] color) {
         if (per.length != color.length)
             throw new RuntimeException("");
-        this.mPrice = price;
         this.mPercentage = per;
         this.mColor = color;
         invalidate();
