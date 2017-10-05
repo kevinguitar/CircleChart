@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by 懷民 on 2017/10/3.
+ * Created by kevin on 2017/10/3.
  */
 
 public class Circle extends View {
@@ -71,7 +71,7 @@ public class Circle extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         mCurrentAngle = 270;
-        //TODO: 動畫實作
+        //TODO: animation
         mPaint.setStrokeWidth(mStrokeArcWidth);
         mPaint.setStyle(Paint.Style.STROKE);
         //mPaint.setStrokeCap(Paint.Cap.ROUND);
@@ -84,7 +84,7 @@ public class Circle extends View {
         canvas.save();
         mPaint.setColor(color);
 
-        //TODO: 角度若不夠減的處理方式
+        //TODO: deal with angle problem
         canvas.drawArc(mOval, mCurrentAngle + ARC_GAP, angle - 2 * ARC_GAP, false, mPaint);
         mCurrentAngle = mCurrentAngle + angle;
         canvas.restore();

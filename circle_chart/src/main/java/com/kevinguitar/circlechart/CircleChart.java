@@ -6,7 +6,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
- * Created by 懷民 on 2017/10/3.
+ * Created by kevin on 2017/10/3.
  */
 
 public class CircleChart extends RelativeLayout {
