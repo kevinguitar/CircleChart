@@ -4,9 +4,9 @@ ext {
     bintrayRepo = 'CircleChart'
     bintrayName = 'CircleChart'
 
-    publishedGroupId = 'com.kevinguitar'
+    publishedGroupId = 'com.kevingt'
     libraryName = 'CircleChart'
-    artifact = 'CircleChart'
+    artifact = 'circle_chart'
 
     libraryDescription = 'Make a Circle Chart to show composition in percentage.'
 
@@ -14,9 +14,9 @@ ext {
     gitUrl = 'https://github.com/kevinguitar/CircleChart.git'
 
     libraryVersion = '1.0.0'
-    developerId = 'kevinguitar'
+    developerId = 'kevingt'
     developerName = 'Kevin Chiu'
-    developerEmail = 'kevin85619@gmail.com'
+    developerEmail = 'kevingt@25sprout.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -51,5 +51,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
-apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
