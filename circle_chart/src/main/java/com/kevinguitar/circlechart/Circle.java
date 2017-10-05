@@ -1,4 +1,4 @@
-package com.example.circlechart;
+package com.kevinguitar.circlechart;
 
 import android.content.Context;
 import android.graphics.Canvas;

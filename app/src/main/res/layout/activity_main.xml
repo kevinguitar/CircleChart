@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.circlechart.MainActivity">
 
-    <com.example.circlechart.CircleChart
+    <com.kevinguitar.circlechart.CircleChart
         android:id="@+id/chart"
         android:layout_width="300dp"
         android:layout_height="300dp" />
